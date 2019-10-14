@@ -4,6 +4,7 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
     ],
+    base: '/fe-imporve/',
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
