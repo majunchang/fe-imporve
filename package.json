@@ -7,7 +7,7 @@
         "docs:dev": "vuepress dev docs",
         "dev": "npm run docs:dev",
         "start": "npm run dev",
-        "deploy": "npm run d",
+        "deploy": "sh deploy.sh",
         "docs:build": "vuepress build docs",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

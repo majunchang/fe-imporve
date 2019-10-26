@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }],
     ],
-    base: '/fe-imporve/',
+    base: '/fe-improve-deploy/',
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
