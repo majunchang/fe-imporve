@@ -39,7 +39,7 @@ function integrateGitalk(router) {
             repo: 'https://github.com/majunchang/fe-improve-deploy',
             owner: 'majunchang',
             admin: ['majunchang'],
-            id: 'comment',
+            id: 'algorithm',
             distractionFreeMode: false,
             language: 'zh-CN',
         });
@@ -47,9 +47,16 @@ function integrateGitalk(router) {
     }
 }
 
-export default ({ Vue, options, router }) => {
+
+export default ({
+    Vue, // VuePress 正在使用的 Vue 构造函数
+    options, // 附加到根实例的一些选项
+    router, // 当前应用的路由实例
+    siteData // 站点元数据
+}) => {
     try {
-        document && integrateGitalk(router)
+        // 生成静态页时在node中执行，没有document对象
+        document && integrateGitment(router)
     } catch (e) {
         console.error(e.message)
     }
