@@ -1,5 +1,8 @@
+import { decode } from "querystring";
+
 function integrateGitalk(router) {
     const linkGitalk = document.createElement('link');
+    const path = window.location.pathname
     linkGitalk.href = 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css';
     linkGitalk.rel = 'stylesheet';
     document.body.appendChild(linkGitalk);
@@ -36,10 +39,10 @@ function integrateGitalk(router) {
         const gitalk = new Gitalk({
             clientID: '00f08d919be92666f54c',
             clientSecret: '8ac1ca34f9380af2a1e595b8944f4e41aedd12b3', // come from github development
-            repo: 'https://github.com/majunchang/fe-improve-deploy',
+            repo: 'majunchang.github.io',
             owner: 'majunchang',
             admin: ['majunchang'],
-            id: 'algorithm',
+            id: window.location.pathname,
             distractionFreeMode: false,
             language: 'zh-CN',
         });
@@ -56,7 +59,7 @@ export default ({
 }) => {
     try {
         // 生成静态页时在node中执行，没有document对象
-        document && integrateGitment(router)
+        document && integrateGitalk(router)
     } catch (e) {
         console.error(e.message)
     }
