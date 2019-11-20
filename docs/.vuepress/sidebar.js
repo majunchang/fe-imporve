@@ -37,6 +37,7 @@ module.exports = {
             title: 'vue',
             children: [
                 '/moveforward/vue/lifecycle.md',
+                '/moveforward/vue/Vue.js 技术揭秘之数据驱动.md',
             ]
         }
     ],
