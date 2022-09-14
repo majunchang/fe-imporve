@@ -36,16 +36,6 @@ function integrateGitalk(router) {
         }
     }
     function renderGitalk(fullPath) {
-        const gitalk = new Gitalk({
-            clientID: '00f08d919be92666f54c',
-            clientSecret: '8ac1ca34f9380af2a1e595b8944f4e41aedd12b3', // come from github development
-            repo: 'majunchang.github.io',
-            owner: 'majunchang',
-            admin: ['majunchang'],
-            id: window.location.pathname,
-            distractionFreeMode: false,
-            language: 'zh-CN',
-        });
         gitalk.render('gitalk-container');
     }
 }
