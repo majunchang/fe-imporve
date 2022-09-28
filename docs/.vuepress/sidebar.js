@@ -55,6 +55,12 @@ module.exports = {
             ]
         },
         {
+            title: '小程序',
+            children: [
+                ['/moveforward/小程序/小程序性能优化', '小程序性能优化'],
+            ]
+        },
+        {
             title: 'vue',
             children: [
                 ['/moveforward/vue2/虚拟dom.md', '虚拟dom'],
