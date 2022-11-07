@@ -58,6 +58,7 @@ module.exports = {
             title: '小程序',
             children: [
                 ['/moveforward/小程序/小程序性能优化', '小程序性能优化'],
+                ['/moveforward/小程序/小程序双线程模型', '小程序双线程模型'],
             ]
         },
         {
@@ -77,11 +78,17 @@ module.exports = {
             ]
         },
         {
+            title: 'react',
+            children: [
+                ['/moveforward/react/react的fiber架构.md', 'react的fiber架构'],
+            ]
+        },
+        {
             title: '项目思考',
             children: [
                 ['/moveforward/思考和方法论/思考和表达的方法论.md', '思考和表达的方法论'],
-                ['/moveforward/思考和方法论/项目思考论..md', '项目思考论.'],
-                ['/moveforward/思考和方法论/小米项目..md', '小米项目.'],
+                ['/moveforward/思考和方法论/项目思考论.md', '项目思考论.'],
+                ['/moveforward/思考和方法论/小米项目.md', '小米项目.'],
             ]
         },
         {
